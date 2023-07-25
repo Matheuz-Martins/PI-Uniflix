@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries | Uniflix</title>
+    <link rel="stylesheet" href="series.css">
+    <link rel="icon" href="icon-img/icon-uniflix-img.jpeg" sizes="32x32">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header-4">
+        <h2 class="titulo-4">UNIFLIX</h2>
+        <nav>
+            <a class="links-4" href="/index.html">Inicio</a>
+            <a class="links-4" href="/categorias.html">Categorias</a>
+            <a class="links-4" href="/filmes.html">Filmes</a>
+            <a class="links-4" href="/series.html">Séries</a>
+        </nav>
+    </header>
+ 
+    <div class="container-search-series">
+    <div class="centralizando-series">
+    <div class="inicio-series">
+        <h2 class="titulo-series">Séries</h2>
+    </div>
+    <div class="campo-de-pesquisa-series">
+        <input type="text" id="search-input" placeholder="Digite o titulo da sua série:">
+        <button id="search-button">Buscar</button>
+    </div>
+    </div>
+        <div id="series-container" class="series-grid"></div>
+    </div>
+
+    <div class="serie-details">
+        <div class="teste">
+            <div class="poster-container"></div>
+            <h3 class="serie-title"></h3>
+        </div>
+        <div class="info-container">
+            <p class="serie-description"></p>
+            <button class="close-button">X</button>
+        </div>
+    </div>
+
+    <footer class="footer-series">
+        <h2 class="titulo-4">UNIFLIX</h2>
+    </footer>
+
+    <script src="series.js"></script>
+</body>
+</html>

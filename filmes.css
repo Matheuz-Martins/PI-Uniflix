@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #262526;
+}
+
+.header-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 21px;
+  background-color: #0D0D0D;
+  margin: 0;
+  padding: 35px;
+}
+
+.titulo-3 {
+  color: #FF0000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.links-3 {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: 'Sarala', sans-serif;
+  color: #FF0000;
+  border: 2px solid #FF0000;
+  border-radius: 13px;
+  padding: 10px 24px;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.links-3:hover {
+  color: #CDD9C1;
+  background-color: #FF0000;
+  border-color: #CDD9C1;
+  transition: background-color 1.2s;
+}
+
+.inicio-filmes h2 {
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #CDD9C1;
+}
+
+.inicio-filmes p {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Sarala', sans-serif;
+  color: #CDD9C1;
+}
+
+.inicio-filmes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 120px;
+}
+
+.centralizado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.campo-de-pesquisa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px; 
+}
+
+.campo-de-pesquisa input {
+  padding: 13px 95px;
+  color: black;
+  border: 2.5px solid #FF0000;
+  border-radius: 5px;
+  font-size: 15px;
+  outline-color: #FF0000;
+  background: #CDD9C1;
+}
+
+.campo-de-pesquisa input::placeholder {
+  color: black;
+  font-family: 'Sarala', sans-serif;
+}
+
+.campo-de-pesquisa button {
+  color: #FF0000;
+  background: #CDD9C1;
+  border: 2.5px solid #FF0000;
+  border-radius: 5px;
+  padding: 6px 25px;
+  font-size: 14px;
+  font-family: 'Sarala', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.campo-de-pesquisa button:hover {
+  color: #CDD9C1;
+  background: #FF0000;
+  border-color: #CDD9C1;
+  transition: background 1.5s;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie img {
+  width: 220px;
+  margin-top: 45px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.movie img:hover {
+  transform: scale(1.1);
+}
+
+.movie p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: 'Sarala', sans-serif;
+  font-size: 20px;
+  color: #CDD9C1;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-filmes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 2px solid black;
+  margin: 30;
+  background-color: #0D0D0D;
+}
+
+.movie-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 95%;
+  height: 75%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: none;
+  overflow: auto;
+  transition: opacity 0.7s ease-in-out;
+  gap: 15px;
+}
+
+.movie-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-details.show {
+  display: flex;
+  opacity: 1;
+}
+
+.poster-container {
+  display: flex;
+  align-items: center;
+}
+
+.poster-container img {
+  margin-right: 15px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.info-container {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: 'Sarala', sans-serif;
+}
+
+.movie-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.movie-description {
+  margin-top: 17px;
+  font-family: 'Sarala', sans-serif;
+}
+
+.movie-info-list {
+  font-family: 'Sarala', sans-serif;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 17px;
+  font-family: 'Sarala', sans-serif;
+  padding: 1px 15px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #CDD9C1;
+  color: #FF0000;
+}
+
+.close-button:hover {
+  background: #FF0000;
+  color: #CDD9C1;
+  border-color: black;
+  transition: background 1.5s;
+}
+
+.movie-details .info-container .info-list .info-title {
+  font-weight: bold;
+  color: #FF0000; /* Substitua pela cor desejada */
+}
+
+.movie-details .info-container .info-list .info-data {
+  color: blueviolet; /* Substitua pela cor desejada */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniflix | Filmes</title>
+    <link rel="stylesheet" href="filmes.css">
+    <link rel="icon" href="icon-img/icon-uniflix-img.jpeg" sizes="32x32">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header-3">
+        <h2 class="titulo-3">UNIFLIX</h2>
+        <nav>
+            <a class="links-3" href="/index.html">Inicio</a>
+            <a class="links-3" href="/categorias.html">Categorias</a>
+            <a class="links-3" href="/filmes.html">Filmes</a>
+            <a class="links-3" href="/series.html">Séries</a>
+        </nav>
+    </header>
+
+    <div class="container-search">
+        <div class="centralizado">
+        <div class="inicio-filmes">
+            <h2>Filmes</h2>
+        </div>
+        <div class="campo-de-pesquisa">
+            <input class="input-search" type="text" id="search-input" placeholder="Digite o título do seu filme:">
+            <button class="button-search" id="search-button">Buscar</button>
+       </div>
+       </div>
+    <div id="movies-container" class="movies-grid"></div>
+    </div>
+
+    <div class="movie-details">
+        <div class="teste">
+        <div class="poster-container"></div>
+           <h3 class="movie-title"></h3>
+        </div>
+        <div class="info-container">
+            <p class="movie-description"></p>
+            <ul class="movie-info-list"></ul>
+            <button class="close-button">X</button>
+        </div>
+    </div>
+
+    <footer class="footer-filmes">
+        <h2 class="titulo-3">UNIFLIX</h2>
+    </footer>
+
+    <script src="filmes.js"></script>
+</body>
+</html>

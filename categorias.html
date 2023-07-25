@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniflix | Categorias</title>
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="icon" href="icon-img/icon-uniflix-img.jpeg" sizes="32x32">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <header class="header-2">
+        <h2 class="titulo-2">UNIFLIX</h2>
+        <nav>
+            <a class="links-2" href="/index.html">Inicio</a>
+            <a class="links-2" href="/categorias.html">Categorias</a>
+            <a class="links-2" href="/filmes.html">Filmes</a>
+            <a class="links-2" href="/series.html">Séries</a>
+        </nav>
+     </header>
+
+     <div class="container">
+        <h2 class="titulo-categorias">Categorias</h2>
+        <p class="paragrafo-categorias">Aqui nas categorias, você podera selecionar entre filme e série,<br> e também podera escolher os gêneros as serem exibidos.</p>
+     </div>
+
+     <div class="caixa-selecao">
+        <div class="caixa-selecao-esquerdo">
+            <button class="button-selecao-filmes">Filmes</button>
+            <button class="button-selecao-series">Séries</button>
+        </div>
+        <div class="caixa-selecao-direito">
+            <button class="selecao-genero-filme-series">Ação</button>
+            <button class="selecao-genero-filme-series">Aventura</button>
+            <button class="selecao-genero-filme-series">Comédia</button>
+            <br>
+            <button class="selecao-genero-filme-series">Drama</button>
+            <button class="selecao-genero-filme-series">Terror</button>
+            <button class="selecao-genero-filme-series">Ficção Cientifica</button>
+            <br>
+            <button class="selecao-genero-filme-series">Suspense</button>
+            <button class="selecao-genero-filme-series">Romance</button>
+            <button class="selecao-genero-filme-series">Animação</button>
+        </div>
+     </div>      
+
+     <div class="container-search">
+        <div class="centralizado">
+        <div class="inicio-filmes">
+            <h2>Filmes</h2>
+        </div>
+        <div class="campo-de-pesquisa">
+       </div>
+       </div>
+    <div id="movies-container" class="movies-grid"></div>
+    </div>
+
+    <div class="movie-details">
+        <div class="teste">
+        <div class="poster-container"></div>
+           <h3 class="movie-title"></h3>
+        </div>
+        <div class="info-container">
+            <p class="movie-description"></p>
+            <button class="close-button">X</button>
+        </div>
+    </div>
+
+    <div class="container-search-series">
+        <div class="centralizando-series">
+        <div class="inicio-series">
+            <h2 class="titulo-series">Séries</h2>
+        </div>
+        <div class="campo-de-pesquisa-series">
+        </div>
+        </div>
+            <div id="series-container" class="series-grid"></div>
+        </div>
+    
+        <div class="serie-details">
+            <div class="teste">
+                <div class="poster-container"></div>
+                <h3 class="serie-title"></h3>
+            </div>
+            <div class="info-container">
+                <p class="serie-description"></p>
+                <button class="close-button">X</button>
+            </div>
+        </div>
+
+     <footer class="footer-categorias">
+        <h2 class="titulo-2">UNIFLIX</h2>
+     </footer>
+
+     <script src="categorias.js"></script>
+</body>
+</html>

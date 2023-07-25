@@ -1,0 +1,327 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+ }
+
+ body{
+  background: #262526;
+ }
+
+ .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 21px;
+    background-color: #0D0D0D;
+    margin: 0;
+    padding: 35px;
+ }
+
+ .titulo{
+    color: #FF0000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+ }
+
+ .links{
+   font-size: 19px;
+   font-weight: 400;
+   font-family: 'Sarala', sans-serif;
+   color: #FF0000;
+   border: 2px solid #FF0000;
+   border-radius: 13px;
+   padding: 10px 24px;
+   justify-content: space-around;
+   margin-right: 30px;
+ }
+
+ .links:hover{
+    color: #CDD9C1;
+    background-color: #FF0000;
+    border-color: #CDD9C1;
+    transition: background-color 1.2s;
+ }
+
+ .div-1{
+    margin-top: 0px;
+    padding-top: 21px;
+    border-top: 2px solid black;
+ }
+
+ .h2-saudacoes{
+    margin-left: 120px;
+    font-size: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #CDD9C1;
+ }
+
+ .paragrafo-saudacoes{
+    margin-left: 120px;
+    margin-top: 3px;
+    font-size: 24px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 600;
+    color: #CDD9C1;
+ }
+
+ .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   background: #3E3E40;
+   height: 30%;
+   width: 85%;
+   padding: 120px 45px;
+   margin-top: 50px;
+   margin-left: 45px;
+   box-shadow: 15px 35px 35px rgba(0, 0, 0, 212);
+   border-radius: 9px;
+   border: 2.5px solid #ff0000;
+}
+
+.form-esquerdo{
+   display: inline-block;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.explicacao-form-esquerdo h2{
+   color: #CDD9C1;
+   text-transform: capitalize;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+   font-size: 32px;
+   text-align: center;
+}
+
+.explicacao-form-esquerdo p{
+   color: #CDD9C1;
+   font-family: 'Sarala', sans-serif;
+   font-size: 21px;
+   font-weight: 300;
+   text-align: center;
+}
+
+.formulario-esquerdo{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.form-group-login{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group-login label{
+   color: #CDD9C1;
+   font-size: 17px;
+   font-weight: 700;
+   font-family: 'Sarala', sans-serif;
+   margin-top: 9px;
+   display: block;
+}
+
+.form-group-login input{
+   border: 2.3px solid #ff0000;
+   border-radius: 5px;
+   outline-color: #ff0000;
+   padding: 10px 18px;
+   margin-bottom: 6px;
+}
+
+.form-group-login input::placeholder{
+   color: black;
+   font-family: 'Sarala', sans-serif;
+   font-size: 14px;
+}
+
+.btn-login{
+   color: #ff0000;
+   background: #CDD9C1;
+   border: 2.3px solid #ff0000;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 5px 25px;
+   text-transform: uppercase;
+   font-family: 'Sarala', sans-serif;
+   margin-top: 9px;
+}
+
+.btn-login:hover{
+   color: #CDD9C1;
+   background: #ff0000;
+   border-color: #CDD9C1;
+   transform: scale(1.1);
+   transition: background 1.3s, transform 1.3s;
+}
+
+.form-direito{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.conteudo-form-direito h2{
+  color: #CDD9C1;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.conteudo-form-direito p{
+  color: #CDD9C1;
+  font-size: 21px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.formulario-direito{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 15px;
+}
+
+.form-group label{
+  color: #CDD9C1;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Sarala', sans-serif;
+  margin-top: 7px;
+  display: block;
+}
+
+.form-group input{
+  background: #CDD9C1;
+  border: 2.3px solid #ff0000;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  outline-color: #ff0000;
+}
+
+.form-group input::placeholder{
+  color: black;
+  background: #CDD9C1;
+  font-family: 'Sarala', sans-serif;
+}
+
+.btn-criar-conta{
+  color: #ff0000;
+  background: #CDD9C1;
+  font-family: 'Sarala', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 25px;
+  cursor: pointer;
+  border: 2.3px solid #ff0000;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+
+.btn-criar-conta:hover{
+  color: #CDD9C1;
+  background:#ff0000;
+  border-color: #CDD9C1;
+  transform: scale(1.1);
+  transition: background 1.3s, transform 1.3s;
+}
+
+ .explicacao{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 35px;
+   margin-top: 145px;
+ }
+
+ .sobre{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .titulo-do-sobre{
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+   font-weight: 900;
+   color: #FF0000;
+ }
+
+ .paragrafo-sobre{
+   font-family: 'Sarala', sans-serif;
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #CDD9C1;
+ }
+
+ .porque{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 35px;
+ }
+
+ .titulo-do-porque{
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+   font-weight: 900;
+   color: #FF0000;
+ }
+
+ .paragrafo-porque{
+   font-family: 'Sarala', sans-serif;
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: #CDD9C1;
+   margin-bottom: 120px;
+ }
+
+ .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: solid 2px black;
+    margin: 30;
+    background-color: #0D0D0D;
+ }
